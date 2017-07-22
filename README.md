@@ -9,9 +9,9 @@ Logs sign ins for [Prairie Aviation Museum](http://prairieaviationmuseum.org/) b
    * Recommended to keep __SignSheet.exe__ in its own folder because it creates the __PAM_SignIn_Export.csv__ file in the same directory
 
 4. Double-click __SignSheet.exe__ to run
-5. The generated __PAM_SignIn_Export.csv__ file can be read with any sheet editor (e.g. Excel, OpenOffice Calc, or Google Sheets)
+5. The __PAM_SignIn_Export.csv__ file can be read with any sheet editor (e.g. Excel, OpenOffice Calc, or Google Sheets)
 
-   * In Excel, if either __Date__ or __Time__ columns show __######__, it is because they need to be expanded to fit the whole number
+   * In Excel, if either __Date__ or __Time__ columns show __######__, the column needs to be expanded to fit the whole number
 
 # Questions and Enhancements
 Send me an email at jacksonwilson99@gmail.com with questions or feature requests and I will do my best to deliver.
