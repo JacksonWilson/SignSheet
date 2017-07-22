@@ -16,7 +16,31 @@ namespace SignSheet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            MainForm pForm = new MainForm();
+            Application.AddMessageFilter(new KeyboardMessageFilter(pForm));
+            Application.Run(pForm);
+        }
+
+        public class KeyboardMessageFilter : IMessageFilter
+        {
+            private MainForm form;
+
+            public KeyboardMessageFilter(MainForm form)
+            {
+                this.form = form;
+            }
+
+            public bool PreFilterMessage(ref Message mesg)
+            {
+                if (mesg.Msg == 0x100)
+                {
+                    if ((int)mesg.WParam == (int)Keys.F11)
+                    {
+                        form.ToggleFullscreen();
+                    }
+                }
+                return false;
+            }
         }
     }
 }
