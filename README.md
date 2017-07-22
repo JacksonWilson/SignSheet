@@ -1,7 +1,7 @@
 # SignSheet
 Logs sign ins for [Prairie Aviation Museum](http://prairieaviationmuseum.org/) by having visitors fill in required information and automatically create entries into .csv file without the need to manually parse pieces of paper.
 
-# Running the application
+# Running The Application
 1. Install [Microsoft .NET 4.7](https://www.microsoft.com/en-us/download/details.aspx?id=55170)
 2. Download latest __PAM_SignIn.zip__ from the [releases tab](https://github.com/JacksonWilson/SignSheet/releases)
 3. Unzip folder and place anywhere
